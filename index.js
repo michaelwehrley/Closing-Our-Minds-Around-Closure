@@ -38,4 +38,8 @@ function identityf(x) {
   }
 }
 
-log(three()) // 3
+function addf() {
+
+}
+
+log(addf(3)(4)) // 7
