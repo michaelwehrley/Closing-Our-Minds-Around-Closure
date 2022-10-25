@@ -20,16 +20,16 @@ function add(first, second) {
   return first + second;
 }
 
-console.log(add(3, 4)) // 7
-
 function sub(first, second) {
   return first - second;
 }
-
-console.log(sub(3, 4)) // -1
 
 function mul(first, second) {
   return first * second;
 }
 
-console.log(mul(3, 4)) // 12
+// first fun problem of the day...
+
+var three = identityf(3);
+
+log(three()) // 3
