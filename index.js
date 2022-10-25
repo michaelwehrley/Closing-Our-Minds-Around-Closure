@@ -16,20 +16,20 @@ function log (arg) {
 
 // 3 binary functions
 
-function add(x, y) {
-
+function add(first, second) {
+  return first + second;
 }
 
 console.log(add(3, 4)) // 7
 
-function sub(x, y) {
-
+function sub(first, second) {
+  return first - second;
 }
 
 console.log(sub(3, 4)) // -1
 
-function mul(x, y) {
-
+function mul(first, second) {
+  return first * second;
 }
 
 console.log(mul(3, 4)) // 12
