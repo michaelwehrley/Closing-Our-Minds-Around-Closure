@@ -32,4 +32,10 @@ function mul(first, second) {
 
 var three = identityf(3);
 
+function identityf(x) {
+  return function() {
+    return x;
+  }
+}
+
 log(three()) // 3
