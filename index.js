@@ -14,10 +14,22 @@ function log (arg) {
   value x (i.e., 3) on the screen
 */
 
-// Warm-up task
+// 3 binary functions
 
-function identity() {
-  // 
+function add(x, y) {
+
 }
 
-log(identity(3)) // 3
+console.log(add(3, 4)) // 7
+
+function sub(x, y) {
+
+}
+
+console.log(sub(3, 4)) // -1
+
+function mul(x, y) {
+
+}
+
+console.log(mul(3, 4)) // 12
