@@ -38,8 +38,11 @@ function identityf(x) {
   }
 }
 
-function addf() {
-
+function addf(first) {
+  return function(second) {
+    return first + second;
+    // return add(first, second)
+  }
 }
 
 log(addf(3)(4)) // 7
