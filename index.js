@@ -38,11 +38,14 @@ function identityf(x) {
   }
 }
 
-function addf(first) {
-  return function(second) {
-    return first + second;
-    // return add(first, second)
-  }
-}
+// function addf(first) {
+//   return function(second) {
+//     return add(first, second)
+//   }
+// }
 
-log(addf(3)(4)) // 7
+var addf = liftf(add);
+addf(3)(4) // 7
+liftf(mul)(5)(6) // 30
+
+log(liftf(mul)(5)(6)) // 30
