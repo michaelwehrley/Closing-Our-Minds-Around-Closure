@@ -44,8 +44,27 @@ function identityf(x) {
 //   }
 // }
 
+// Higher Order Functions
+
+/*
+  Higher Order Functions are functions that receive
+  other functions as paramters and return other functions
+  as results
+*/
+
+
 var addf = liftf(add);
 addf(3)(4) // 7
+
 liftf(mul)(5)(6) // 30
 
+function liftf(binary) {
+  return function(first) {
+    return function(second) {
+      return binary(first, second)
+    }
+  };
+}
+
+console.log(addf(3)(4)) // 7
 log(liftf(mul)(5)(6)) // 30
